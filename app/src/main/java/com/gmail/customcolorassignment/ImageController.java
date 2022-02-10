@@ -20,6 +20,17 @@ public class ImageController implements SeekBar.OnSeekBarChangeListener, View.On
     private float xCord = 0;
     private float yCord = 0;
 
+    /**
+     * ImageController ctor
+     * @param initImageView
+     * @param initRedTextView
+     * @param initGreenTextView
+     * @param initBlueText
+     * @param initRedSeekBar
+     * @param initGreenSeekBar
+     * @param initBlueSeekBar
+     * @param initSelectTextView
+     */
 
     ImageController(ImageView initImageView, TextView initRedTextView, TextView initGreenTextView,
                     TextView initBlueText, SeekBar initRedSeekBar, SeekBar initGreenSeekBar,
@@ -83,8 +94,18 @@ public class ImageController implements SeekBar.OnSeekBarChangeListener, View.On
         xCord = x;
         yCord = y;
 
-        /** set the values according to user touch input*/
-     String location = "Select Area";
+        /** set the values according to user touch input */
+
+        /**
+         * External Citation
+         * Date: 09 Feb 2022
+         * Problem: couldn't figure out how to pull RGB values from a paint object
+         *
+         * Resource:
+         * https://developer.android.com/reference/android/graphics/Color
+         * Solution: I used the Color.red()/.green()/.blue() to pull color values.
+         */
+        String location = "Select Area";
         if (xCord > 180 && xCord < 230 && yCord > 250 && yCord < 520) {
             location = "Trunk";
 
