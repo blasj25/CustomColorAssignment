@@ -6,6 +6,14 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
 import android.view.View;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.util.AttributeSet;
+import android.view.SurfaceView;
+import android.view.View;
+
+/** @author Joshua Blas */
 
 public class ImageView extends SurfaceView {
     private ImageModel imageModel;

@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+/** @author Joshua Blas */
+
 public class ImageController implements SeekBar.OnSeekBarChangeListener, View.OnTouchListener {
     private ImageView imageView;
     private ImageModel imageModel;

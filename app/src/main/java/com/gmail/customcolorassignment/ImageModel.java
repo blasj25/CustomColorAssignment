@@ -5,6 +5,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.widget.SeekBar;
 
+/** @author Joshua Blas */
+
 public class ImageModel {
     Paint trunkPaint = new Paint();
     Paint leafPaint = new Paint();

@@ -9,6 +9,8 @@ import android.util.Log;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+/** @author Joshua Blas */
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
